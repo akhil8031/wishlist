@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Wishlist</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+<style>
+
+
+.jumbotron {
+	
+	background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    
+}
+
+.btn{
+	position: center;
+}
+
+.form-horizontal{
+	top-padding: 30%;
+}
+.fa-google{
+	color: #DD4B39;
+}
+
+.container h2{
+	padding-top: 35px;
+}
+
+#container {
+  width: 100%;
+  position: fixed;
+  background: yellow;
+}
+
+#animate {
+  position: absolute;
+ }
+
+#quote{
+height:150px;
+width:150px;
+padding: 10px 10px 10px 10px;
+}
+
+</style>
+
+</head>
+<body onload="myMove()">
+
+  <div class="jumbotron">
+    
+    <div class="container">
+          <div class="col-sm-offset-8 col-sm-4 page-header">
+        <h2>Sign in</h2>
+  </div>
+  <form class="form-horizontal">
+    <div class="form-group form-group-lg">
+      <div class="col-sm-offset-8 col-sm-4">
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+    </div>
+    <div class="form-group form-group-lg">
+      <div class="col-sm-offset-8 col-sm-4">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group form-group-lg">
+      <div class="col-sm-offset-9 col-sm-3">
+        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+      </div>
+    </div>
+     <div class="col-sm-offset-8 col-sm-4 page-header">
+        <h4>Sign in with:</h4>
+  </div>
+   <div class="form-group form-group-lg">
+      <div class="col-sm-offset-8 col-sm-2">
+      <a class="btn btn-block btn-social btn-facebook">
+    <span class="fa fa-facebook fa-3x"></span> 
+  </a>
+  </div>
+  <div class="col-sm-2">
+  <a class="btn btn-block btn-social google">
+    <span class="fa fa-google fa-3x"></span>
+  </a>
+      </div>
+      
+    </div>
+    <br><br><br>
+     <div class="col-sm-offset-8 col-sm-4">
+        <h4>Don't have an account? <a href="#">Sign up</a></h4>
+  </div>
+    
+    
+  </form>
+</div>
+  </div>
+  
+  
+  <div id ="container">
+<div id ="animate">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+<img id="quote" alt="quote1" src="images/q1.png">
+
+
+</div>
+</div>
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, 25);
+  function frame() {
+    if (pos == 200) {
+		pos=0;
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
